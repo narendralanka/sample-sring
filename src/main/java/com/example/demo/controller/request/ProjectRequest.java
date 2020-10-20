@@ -16,6 +16,11 @@ public class ProjectRequest {
 		this.projectCost = projectCost;
 	}
 	
+	@Override
+	public String toString() {
+		return "ProjectRequest [projectName=" + projectName + ", projectCost=" + projectCost + "]";
+	}
+	
 	
 
 }
