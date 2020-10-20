@@ -37,6 +37,11 @@ public class Project {
 	public void setProjectCost(String projectCost) {
 		this.projectCost = projectCost;
 	}
+	@Override
+	public String toString() {
+		return "Project [projectId=" + projectId + ", projectName=" + projectName + ", projectCost=" + projectCost
+				+ "]";
+	}
 
 	
 	
