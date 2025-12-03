@@ -1,15 +1,10 @@
 pipeline {
     agent any
 
-    // Optional: use Jenkins-managed JDK
-    tools {
-        // Only if you've defined a JDK named 'JDK17' in Global Tool Configuration
-        // jdk 'JDK17'
-    }
-
+    
     environment {
         // Must match the SonarQube server name configured in Jenkins
-        SONARQUBE_SERVER = 'http://3.106.124.241:9000/'
+        SONARQUBE_SERVER = 'Sonar'
 
         // Replace with your preferred SonarQube project key
         SONAR_PROJECT_KEY = 'spring-sample-app'
